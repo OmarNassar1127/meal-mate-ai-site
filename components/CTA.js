@@ -1,5 +1,5 @@
 'use client';
-
+//init
 import { useLanguage } from '../lib/LanguageContext';
 import { getAssetPath } from '../lib/utils';
 import { Download, ArrowRight, Check, Sparkles } from 'lucide-react';
