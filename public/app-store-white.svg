@@ -1,0 +1,8 @@
+<svg width="140" height="48" viewBox="0 0 140 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="140" height="48" rx="8" fill="white" fill-opacity="0.1"/>
+  <rect x="0.5" y="0.5" width="139" height="47" rx="7.5" stroke="white" stroke-opacity="0.3"/>
+  <path d="M31.128 24.712c-.024-2.872 2.344-4.256 2.448-4.328-1.336-1.952-3.416-2.216-4.152-2.248-1.768-.176-3.456 1.04-4.352 1.04-.912 0-2.312-1.016-3.808-0.984-1.96.032-3.768 1.144-4.776 2.904-2.04 3.536-.52 8.768 1.464 11.64.968 1.408 2.128 2.984 3.648 2.928 1.464-.056 2.016-.952 3.784-.952 1.752 0 2.264.952 3.808.92 1.576-.024 2.576-1.432 3.528-2.848 1.12-1.632 1.576-3.216 1.6-3.296-.032-.016-3.08-1.184-3.104-4.696l-.088-.08z" fill="white"/>
+  <path d="M28.216 13.084c.808-0.976 1.352-2.336 1.2-3.688-1.16.048-2.568.776-3.4 1.752-.744.864-1.4 2.248-1.224 3.576 1.296.104 2.616-.656 3.424-1.64z" fill="white"/>
+  <text x="45" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="white">Download on the</text>
+  <text x="45" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="white">App Store</text>
+</svg>

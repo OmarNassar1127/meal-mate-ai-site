@@ -1,0 +1,43 @@
+<svg width="140" height="48" viewBox="0 0 140 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="140" height="48" rx="8" fill="black"/>
+  
+  <!-- Play Store Triangle -->
+  <g transform="translate(10, 10)">
+    <path d="M4 3.71v20.57L18.2 14 4 3.71z" fill="url(#play_gradient1)"/>
+    <path d="M22.34 16.27L18.2 14l-4.38 4.38L18.2 23l4.14-2.35c1.33-.75 1.33-1.97 0-2.73" fill="url(#play_gradient2)"/>
+    <path d="M4 24.28L18.2 14 4 3.71c0-.76.52-1.42 1.28-1.59l17.06 9.88L5.28 25.87C4.52 25.7 4 25.04 4 24.28" fill="url(#play_gradient3)"/>
+    <path d="M18.2 14L5.28 2.12c.19-.05.39-.08.59-.08.35 0 .7.1 1.01.3l15.46 8.94L18.2 14z" fill="url(#play_gradient4)"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="45" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="white" opacity="0.9">GET IT ON</text>
+  <text x="45" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="white">Google Play</text>
+  
+  <defs>
+    <linearGradient id="play_gradient1" x1="13.376" y1="1.768" x2="3.988" y2="10.884" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00A0FF"/>
+      <stop offset="0.007" stop-color="#00A1FF"/>
+      <stop offset="0.26" stop-color="#00BEFF"/>
+      <stop offset="0.512" stop-color="#00D2FF"/>
+      <stop offset="0.76" stop-color="#00DFFF"/>
+      <stop offset="1" stop-color="#00E3FF"/>
+    </linearGradient>
+    <linearGradient id="play_gradient2" x1="24.827" y1="14" x2="2.069" y2="14" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE000"/>
+      <stop offset="0.409" stop-color="#FFBD00"/>
+      <stop offset="0.775" stop-color="#FFA500"/>
+      <stop offset="1" stop-color="#FF9C00"/>
+    </linearGradient>
+    <linearGradient id="play_gradient3" x1="16.256" y1="16.368" x2="1.239" y2="30.873" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF3A44"/>
+      <stop offset="1" stop-color="#C31162"/>
+    </linearGradient>
+    <linearGradient id="play_gradient4" x1="1.896" y1="0.01" x2="10.163" y2="8.083" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#32A071"/>
+      <stop offset="0.069" stop-color="#2DA771"/>
+      <stop offset="0.476" stop-color="#15CF74"/>
+      <stop offset="0.801" stop-color="#06E775"/>
+      <stop offset="1" stop-color="#00F076"/>
+    </linearGradient>
+  </defs>
+</svg>
