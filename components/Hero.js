@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '../lib/LanguageContext';
+import { getAssetPath } from '../lib/utils';
 import { Star, Download, Play, Sparkles, Zap, ChefHat } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
@@ -82,10 +83,10 @@ export default function Hero() {
             
             <div className="flex items-center justify-center lg:justify-start space-x-6 animate-fade-in-up animation-delay-800">
               <a href="#" className="transform hover:scale-110 transition-transform">
-                <img src="/app-store.svg" alt="Download on App Store" className="h-14" />
+                <img src={getAssetPath('/app-store.svg')} alt="Download on App Store" className="h-14" />
               </a>
               <a href="#" className="transform hover:scale-110 transition-transform">
-                <img src="/google-play.svg" alt="Get it on Google Play" className="h-14" />
+                <img src={getAssetPath('/google-play.svg')} alt="Get it on Google Play" className="h-14" />
               </a>
             </div>
           </div>

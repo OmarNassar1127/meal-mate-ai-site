@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '../lib/LanguageContext';
+import { getAssetPath } from '../lib/utils';
 import { Heart, Github, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 export default function Footer() {
@@ -35,7 +36,10 @@ export default function Footer() {
   return (
     <footer className="relative bg-gray-900 overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: `url(${getAssetPath('/grid.svg')})`,
+        backgroundSize: '100px 100px'
+      }}></div>
       
       {/* Gradient overlays */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-teal-500 rounded-full blur-3xl opacity-5"></div>
@@ -54,10 +58,10 @@ export default function Footer() {
             {/* Download buttons */}
             <div className="space-y-3 mb-6">
               <a href="#" className="block transform hover:scale-105 transition-transform">
-                <img src="/app-store-white.svg" alt="Download on App Store" className="h-12" />
+                <img src={getAssetPath('/app-store-white.svg')} alt="Download on App Store" className="h-12" />
               </a>
               <a href="#" className="block transform hover:scale-105 transition-transform">
-                <img src="/google-play-white.svg" alt="Get it on Google Play" className="h-12" />
+                <img src={getAssetPath('/google-play-white.svg')} alt="Get it on Google Play" className="h-12" />
               </a>
             </div>
           </div>

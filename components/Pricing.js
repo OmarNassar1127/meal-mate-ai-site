@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '../lib/LanguageContext';
+import { getAssetPath } from '../lib/utils';
 import { Check, Star, Zap, Crown } from 'lucide-react';
 import { useState } from 'react';
 
@@ -78,7 +79,10 @@ export default function Pricing() {
               } shadow-2xl`}>
                 {/* Animated background pattern */}
                 <div className="absolute inset-0 opacity-10">
-                  <div className="absolute inset-0 bg-[url('/grid.svg')]"></div>
+                  <div className="absolute inset-0" style={{
+                    backgroundImage: `url(${getAssetPath('/grid.svg')})`,
+                    backgroundSize: '100px 100px'
+                  }}></div>
                 </div>
 
                 {/* Glow effect for popular plan */}

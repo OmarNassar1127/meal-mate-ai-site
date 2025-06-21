@@ -32,12 +32,19 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <div className="relative group">
+            <a 
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="relative group cursor-pointer"
+            >
               <div className="absolute -inset-1 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-lg blur opacity-50 group-hover:opacity-100 transition duration-200"></div>
               <span className="relative text-2xl font-bold text-white">
                 MealMate AI
               </span>
-            </div>
+            </a>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">

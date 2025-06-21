@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '../lib/LanguageContext';
+import { getAssetPath } from '../lib/utils';
 import { Star, Quote, Heart } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
@@ -20,7 +21,10 @@ export default function Testimonials() {
     <section id="testimonials" className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
+        <div className="absolute inset-0 opacity-5" style={{
+          backgroundImage: `url(${getAssetPath('/grid.svg')})`,
+          backgroundSize: '100px 100px'
+        }}></div>
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-purple-500 rounded-full blur-3xl opacity-10 animate-pulse"></div>
         <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-teal-500 rounded-full blur-3xl opacity-10 animate-pulse animation-delay-2000"></div>
       </div>

@@ -4,9 +4,11 @@ import { LanguageProvider } from '../lib/LanguageContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const basePath = process.env.NODE_ENV === 'production' ? '/meal-mat-ai-site' : '';
+
 export const metadata = {
   icons: {
-    icon: '/favicon.svg',
+    icon: `${basePath}/favicon.svg`,
   },
   title: 'MealMate AI - Your Personal AI-Powered Meal Planner',
   description: 'Transform your eating habits with personalized meal plans, nutrition tracking, and smart shopping lists - all powered by AI',
@@ -14,13 +16,13 @@ export const metadata = {
   openGraph: {
     title: 'MealMate AI - Your Personal AI-Powered Meal Planner',
     description: 'Transform your eating habits with personalized meal plans, nutrition tracking, and smart shopping lists',
-    images: ['/og-image.svg'],
+    images: [`${basePath}/og-image.svg`],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'MealMate AI - Your Personal AI-Powered Meal Planner',
     description: 'Transform your eating habits with personalized meal plans',
-    images: ['/og-image.svg'],
+    images: [`${basePath}/og-image.svg`],
   }
 }
 

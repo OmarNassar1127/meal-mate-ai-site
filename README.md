@@ -103,6 +103,23 @@ npm run build
 npm start
 ```
 
+## Deployment
+
+### Deploy to GitHub Pages
+
+1. **Quick Deploy**:
+   ```bash
+   ./deploy.sh
+   ```
+
+2. **Manual Deploy**:
+   - Push your code to GitHub
+   - Go to Settings > Pages in your repository
+   - Select "GitHub Actions" as the source
+   - Your site will be live at: `https://YOUR_USERNAME.github.io/meal-mat-ai-site`
+
+See [DEPLOY.md](./DEPLOY.md) for detailed instructions.
+
 ## License
 
 This project is private and proprietary.

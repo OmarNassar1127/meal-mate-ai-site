@@ -1,6 +1,7 @@
 'use client';
 
 import { useLanguage } from '../lib/LanguageContext';
+import { getAssetPath } from '../lib/utils';
 import { Download, ArrowRight, Check, Sparkles } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
@@ -36,7 +37,10 @@ export default function CTA() {
     >
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-teal-900 to-gray-900">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-10" style={{
+          backgroundImage: `url(${getAssetPath('/grid.svg')})`,
+          backgroundSize: '100px 100px'
+        }}></div>
         <div 
           className="absolute w-96 h-96 bg-teal-500 rounded-full blur-3xl opacity-30 transition-all duration-1000"
           style={{
@@ -88,14 +92,14 @@ export default function CTA() {
           <div className="flex justify-center space-x-6 mb-12">
             <a href="#" className="transform hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
               <img 
-                src="/app-store-white.svg" 
+                src={getAssetPath('/app-store-white.svg')} 
                 alt="Download on App Store" 
                 className="h-16"
               />
             </a>
             <a href="#" className="transform hover:scale-110 transition-all duration-300 hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.3)]">
               <img 
-                src="/google-play-white.svg" 
+                src={getAssetPath('/google-play-white.svg')} 
                 alt="Get it on Google Play" 
                 className="h-16"
               />
