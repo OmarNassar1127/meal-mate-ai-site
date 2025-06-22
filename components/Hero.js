@@ -2,7 +2,7 @@
 
 import { useLanguage } from '../lib/LanguageContext';
 import { getAssetPath } from '../lib/utils';
-import { Star, Download, Play, Sparkles, Zap, ChefHat } from 'lucide-react';
+import { Download, Play, Sparkles, Zap, ChefHat } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Hero() {
@@ -23,7 +23,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-teal-900 to-gray-900">
       {/* Animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-10" style={{backgroundImage: `url('${getAssetPath('/grid.svg')}')`}}></div>
         <div className="absolute top-20 left-20 w-72 h-72 bg-teal-500 rounded-full blur-[128px] opacity-30 animate-pulse"></div>
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-emerald-500 rounded-full blur-[128px] opacity-30 animate-pulse animation-delay-2000"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-400 rounded-full blur-[200px] opacity-20"></div>

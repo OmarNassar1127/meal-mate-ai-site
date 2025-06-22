@@ -4,7 +4,7 @@ import { LanguageProvider } from '../lib/LanguageContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const basePath = process.env.NODE_ENV === 'production' ? '/meal-mat-ai-site' : '';
+const basePath = process.env.NODE_ENV === 'production' ? '/meal-mate-ai-site' : '';
 
 export const metadata = {
   icons: {
